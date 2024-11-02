@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PublishProfile xmlns="http://schemas.microsoft.com/2015/05/fabrictools">
+    <ClusterConnectionParameters ConnectionEndpoint="__ConnectionEndpoint__"
+                                 KeepAliveIntervalInSec="10"
+                                 X509Credential="true"
+                                 ServerCertThumbprint="__ServerCertThumbprint__"
+                                 FindType="FindByThumbprint"
+                                 FindValue="__ServerCertThumbprint__"
+                                 StoreLocation="CurrentUser"
+                                 StoreName="My" />
+    <ApplicationParameterFile Path="..\ApplicationParameters\Release.xml" />
+    <CopyPackageParameters CompressPackage="true" />
+</PublishProfile>

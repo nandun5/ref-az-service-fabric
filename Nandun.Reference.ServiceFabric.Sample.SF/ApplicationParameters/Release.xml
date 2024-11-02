@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/Reference.ServiceFabric.Sample" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="AuthClientId" Value="__AuthClientId__" />
+    <Parameter Name="AuthClientSecret" Value="__AuthClientSecret__" />
+    <Parameter Name="KeyVaultUrl" Value="__KeyVaultUrl__" />
+    <Parameter Name="KeyVaultTimeout" Value="__KeyVaultTimeout__" />
+    <Parameter Name="App_PlacementConstraints" Value="__App_PlacementConstraints__" />
+    <Parameter Name="SSL_Thumbprint" Value="__SSL_Thumbprint__" />
+    <Parameter Name="SSL_CertName" Value="__SSL_CertName__" />
+    <Parameter Name="Default_InstanceCount" Value="__Default_InstanceCount__" />
+  </Parameters>
+</Application>

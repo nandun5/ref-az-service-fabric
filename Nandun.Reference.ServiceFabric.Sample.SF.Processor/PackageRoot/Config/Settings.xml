@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Section Name="ReferenceService">
+    <Parameter Name="AuthClientId" Value="" />
+    <Parameter Name="AuthClientSecret" Value="" />
+    <Parameter Name="KeyVaultUrl" Value="" />
+    <Parameter Name="KeyVaultTimeout" Value="" />
+    <Parameter Name="SSL_CertName" Value="" />
+  </Section>
+</Settings>

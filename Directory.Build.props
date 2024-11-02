@@ -1,0 +1,33 @@
+<Project>
+    <PropertyGroup Label="Runtime SDK">
+        <DefaultNetCoreTargetFramework>net6.0</DefaultNetCoreTargetFramework>
+        <IsTestProject>$(MSBuildProjectName.Contains('.UnitTest'))</IsTestProject>
+        <GenerateDocumentationFile Condition="'$(IsTestProject)' != 'true'">true</GenerateDocumentationFile>
+        <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+        <LangVersion>latest</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Platforms>x64</Platforms>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(IsTestProject)' == 'true'">
+        <!--HINT: Overriding because mstest classes initialize non nullable members setup method, rather than ctor-->
+        <Nullable>disable</Nullable>
+        <RunSettingsFilePath>$(SolutionDir)\test.runsettings</RunSettingsFilePath>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(IsTestProject)' != 'true'">
+        <InternalsVisibleTo Include="$(MSBuildProjectName).UnitTest" />
+    </ItemGroup>
+
+    <PropertyGroup Label="General Info">
+        <Authors>$(Company)</Authors>
+        <Company>Company Name</Company>
+        <Copyright>Copyright © $([System.DateTime]::Now.ToString('yyyy')) $(Company)</Copyright>
+        <RepositoryUrl>https://github.com/nandun5/ref-az-service-fabric.git</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+    </PropertyGroup>
+</Project>
