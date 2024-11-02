@@ -2,11 +2,11 @@
 <Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/Reference.ServiceFabric.Sample" xmlns="http://schemas.microsoft.com/2011/01/fabric">
   <Parameters>
     <Parameter Name="AuthClientId" Value="b3693af1-d25d-4e8a-8eaa-32781d44b604" />
-    <Parameter Name="AuthClientSecret" Value="HOtTRuqVz+2jE4hKuOPqCvMICPNZENvelHLqwhSATiQ=" />
-    <Parameter Name="KeyVaultUrl" Value="https://dev-Referenceent-east-kv.vault.azure.net/" />
+    <Parameter Name="AuthClientSecret" Value="__KEY__" />
+    <Parameter Name="KeyVaultUrl" Value="https://dev-Reference-east-kv.vault.azure.net/" />
     <Parameter Name="KeyVaultTimeout" Value="4" />
     <Parameter Name="App_PlacementConstraints" Value="(NodeType==NodeType0)" />
-    <Parameter Name="SSL_Thumbprint" Value="953F7A3E257F39A808B7AEB462F4518893DD91CF" />
+    <Parameter Name="SSL_Thumbprint" Value="__THUMBPRINT__" />
     <Parameter Name="SSL_CertName" Value="ReferenceEntSSL" />
     <Parameter Name="Default_InstanceCount" Value="1" />
   </Parameters>
